@@ -1,0 +1,113 @@
+@use 'variables' as *;
+
+.suzie_story {
+    background-color: #152d20;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 5% 5% 5% 5%;
+    gap: 5%;
+
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.suzie_left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.suzie_right_all {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+}
+
+.suzie_left>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 800px) {
+        object-fit: cover;
+    }
+}
+
+.suzie_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+}
+
+.suzie_right>h2 {
+    font-size: calc(20px + 1vh);
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+
+    @media only screen and (max-width: 800px) {
+        font-size: calc(40px + 2vh);
+        ;
+        font-weight: 400;
+    }
+}
+
+.suzie_right>p {
+    font-family: $bodytext_f;
+    font-size: calc(6px + 1vh);
+    color: white;
+    line-height: 1.5;
+
+    @media only screen and (max-width: 800px) {
+        font-family: $bodytext_f;
+        font-size: calc(16px + 2vh);
+        font-weight: 400;
+        margin-bottom: 10%;
+    }
+}
+
+.button1 {
+    font-family: $button_f;
+    text-transform: uppercase;
+    font-size: calc(6px + 1vh);
+    text-align: center;
+    width: 20%;
+    background-color: white;
+    border: none;
+    padding: 1.5%;
+
+    @media only screen and (max-width: 800px) {
+        margin: 0 auto;
+        width: 40%;
+        padding: 3%;
+        font-size: calc(18px + 2vh);
+        text-align: center;
+    }
+}

@@ -1,0 +1,226 @@
+@use 'variables' as *;
+
+.fascinating_facts {
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #8d948f, $alpha: 1.0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 800px) {
+        background-color: white;
+    }
+}
+
+.fact_upper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.fact_upper_left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+        margin: 5% 0;
+        padding: 0;
+    }
+}
+
+.fact_left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 800px) {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1%;
+    }
+}
+
+.fact_left>h2 {
+    font-size: calc(16px + 1vh);
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        text-align: center;
+        font-size: calc(22px + 2vh);
+    }
+}
+
+.fact_left>p {
+    font-size: calc(6px + 1vh);
+    opacity: 0.5;
+    line-height: 1.5;
+
+    @media only screen and (max-width: 800px) {
+        font-family: $bodytext_f;
+        font-size: calc(16px + 2vh);
+        text-align: center;
+    }
+}
+
+.button2 {
+    width: 30%;
+    color: white;
+    font-family: $button_f;
+    text-transform: uppercase;
+    font-size: calc(6px + 1vh);
+    text-align: center;
+    background-color: #152D20;
+    border: none;
+    padding: 2%;
+
+    @media only screen and (max-width: 800px) {
+        width: 50%;
+        margin: 10% 0;
+        font-size: calc(22px + 2vh);
+        font-weight: lighter;
+        padding: 4%;
+    }
+}
+
+.fact_upper_right {
+    width: 50%;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.fact_upper_right>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 800px) {
+        height: 400px;
+    }
+}
+
+.fact_lower {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fact_lower_left {
+    width: 50%;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.fact_lower_left>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 800px) {
+        height: 400px;
+    }
+}
+
+.fact_lower_right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.fact_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+    @media only screen and (max-width: 800px) {
+        width: 90%;
+        padding: 0 1%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.fact_right>h2 {
+    font-size: calc(16px + 1vh);
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0;
+
+    @media only screen and (max-width: 800px) {
+        font-size: calc(22px + 2vh);
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+.fact_right>p {
+    font-family: $bodytext_f;
+    font-size: calc(6px + 1vh);
+    opacity: 0.5;
+    line-height: 1.5;
+
+    @media only screen and (max-width: 800px) {
+        font-size: calc(16px + 2vh);
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+}
+
+.button3 {
+    width: 30%;
+    color: white;
+    font-family: $button_f;
+    text-transform: uppercase;
+    font-size: calc(6px + 1vh);
+    text-align: center;
+    background-color: #152D20;
+    border: none;
+    padding: 2%;
+
+    @media only screen and (max-width: 800px) {
+        position: absolute;
+        bottom: -2%;
+        z-index: 1;
+        font-size: calc(22px + 2vh);
+        font-weight: lighter;
+        padding: 4% 3%;
+        width: 50%;
+    }
+}

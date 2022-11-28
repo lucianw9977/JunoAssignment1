@@ -1,0 +1,97 @@
+@use 'variables' as *;
+
+.animal_refuge {
+    background-image: url("./image-1.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @media only screen and (max-width: 800px) {
+        height: 1200px;
+        background-position: 33%;
+    }
+}
+
+.section1_nav {
+    padding: 20px 0 20px 0;
+
+    @media only screen and (max-width: 800px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.section1_nav_a {
+    width: 40%;
+    font-size: calc(6px + 1vh);
+    font-family: $smallheading_f;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+        padding: 0;
+    }
+}
+
+.section1_nav_a>a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+
+    @media only screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
+.title1_logo {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    text-align: right;
+
+    @media only screen and (max-width: 800px) {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        right: 0;
+        text-align: left;
+    }
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(60px + 1vh);
+    font-weight: 400;
+
+    @media only screen and (max-width: 800px) {
+        font-size: calc(60px + 1vh);
+        margin: 0;
+    }
+}
+
+.title1_socialMedia {
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+
+    @media only screen and (max-width: 800px) {
+        display: none;
+    }
+}
+
+.title1_icon {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 5px;
+}
